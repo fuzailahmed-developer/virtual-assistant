@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #87cefa, #ff69b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.word-spacing{
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.cyan-btn {
+  background: #00e5ff;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow:
+    0 0 10px rgba(0, 229, 255, 0.8),
+    0 0 20px rgba(0, 229, 255, 0.6),
+    0 0 30px rgba(0, 229, 255, 0.4);
+  transition: 0.2s;
+}
+
+.cyan-btn:hover {
+  box-shadow:
+    0 0 15px rgba(0, 229, 255, 1),
+    0 0 30px rgba(0, 229, 255, 0.8),
+    0 0 45px rgba(0, 229, 255, 0.6);
+}

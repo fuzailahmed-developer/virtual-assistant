@@ -40,7 +40,7 @@ const App = () => {
 
           {
             speaking ? <div>
-              <img src={aiVoice} alt="" className='h-[200px] w-[550px]' />
+              <img src={aiVoice} alt="" className='h-[104px] w-[550px]' />
             </div> :
               listening ?
                 <div className='flex flex-col items-center'>

@@ -20,13 +20,10 @@ export const AssistantContextProvider = ({ children }) => {
         window.speechSynthesis.cancel(); // old speech stop
         window.speechSynthesis.speak(utterance);
 
-        utterance.onstart = () => {
-            setSpeaking(true); 
-        };
+        utterance.onstart = () => setSpeaking(true); 
 
-        utterance.onend = () => {
-            setSpeaking(false); 
-        };
+        utterance.onend = () => setSpeaking(false); 
+
 
     };
 
@@ -40,7 +37,6 @@ export const AssistantContextProvider = ({ children }) => {
     const recognition = new speechRecognition();
     recognition.onresult = (e) => {
         setUserPrompt(e.results[0][0].transcript)
-        console.log(e.results[0][0].transcript)
     }
 
 

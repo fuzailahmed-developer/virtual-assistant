@@ -16,7 +16,7 @@ export const AssistantContextProvider = ({ children }) => {
         utterance.rate = 1;       // speed
         utterance.pitch = 1;      // voice pitch
         utterance.volume = 1;     // volume
-        utterance.lang = 'hi-IN'
+        utterance.lang = 'en-US'
         window.speechSynthesis.cancel(); // old speech stop
         window.speechSynthesis.speak(utterance);
 
